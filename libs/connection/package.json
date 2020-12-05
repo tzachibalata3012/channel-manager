@@ -1,0 +1,56 @@
+{
+  "name": "@resource-control/connection",
+  "scope": "@resource-control",
+  "version": "1.1.4",
+  "description": "Library for implementing a communication channel between a master and multiple agents, and determmining protocols between",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rm -rf lib && tsc",
+    "dev": "webpack --watch --config webpack.dev.js",
+    "test": "jest"
+  },
+  "publishConfig": {
+    "registry": "http://172.18.212.249:8081/repository/rf-npm-hosted/"
+  },
+  "author": "Bar Leshem",
+  "license": "ISC",
+  "dependencies": {
+    "@resource-control/protocol": "^1.1.3",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
+    "uuid": "^3.3.2",
+    "uuid-validate": "0.0.3"
+  },
+  "devDependencies": {
+    "@types/argparse": "^1.0.38",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.0",
+    "@types/socket.io": "^2.1.4",
+    "compression-webpack-plugin": "^3.1.0",
+    "jest": "^23.6.0",
+    "node": "^13.13.0",
+    "ts-jest": "^25.4.0",
+    "ts-loader": "^7.0.0",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/lib/"
+    ],
+    "moduleNameMapper": {
+      "@/(.*)$": "<rootDir>/src/$1"
+    },
+    "testRegex": "\\.(test|spec)\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  },
+  "gitHead": "f749c8766214250e4b36da0b233b098d0386177d"
+}
