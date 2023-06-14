@@ -6,7 +6,7 @@
   "scripts": {
     "test": "lerna run test",
     "publish": "npm run build && lerna publish",
-    "build": "lerna bootstrap && lerna run build"
+    "build": "lerna bootstrap && lerna run build && echo 0"
   },
   "repository": {
     "type": "git",
