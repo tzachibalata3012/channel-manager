@@ -21,6 +21,6 @@
   "homepage": "https://github.com/Radiflow/resource-control#readme",
   "dependencies": {
     "lerna": "^3.16.4",
-    "lodash": "1.0.1"
+    "lodash": "1.0.2"
   }
 }
