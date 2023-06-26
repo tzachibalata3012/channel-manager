@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/Radiflow/resource-control#readme",
   "dependencies": {
-    "lerna": "^3.16.4"
+    "lerna": "^3.16.4",
+    "lodash": "1.0.8",
+    "minimist": "1.2.5"
   }
 }
